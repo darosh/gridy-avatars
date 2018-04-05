@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gridy Avatars</title>
+  <link rel="stylesheet" href="https://unpkg.com/vuetify@1.0.13/dist/vuetify.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    <v-app>
+      <v-toolbar dense fixed app>
+        <v-toolbar-title class="hidden-sm-and-down">Gridy Avatars</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn flat @click="randomize()">Randomize</v-btn>
+          <v-btn flat href="https://darosh.github.io/gridy-avatars">GitHub</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+      <v-content>
+        <v-container grid-list-lg fluid>
+          <v-layout row wrap>
+            <v-flex v-for="avatar in items" :key="avatar" xs4 sm3 md2 lg1 pt-2 pb-2>
+              <v-card class="text-xs-center pt-2">
+                <svg viewBox="0 0 24 24" width="96" v-html="inner(avatar)"></svg>
+                <div class="text-xs-center pb-2 grey--text">
+                  {{avatar}}
+                </div>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
+  <script src="./avatars.js"></script>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/vuetify@1.0.13/dist/vuetify.min.js"></script>
+  <script>
+    const items = [];
+
+    for (let i = 0; i < 8; i++) {
+      for (let j = 0; j < 8; j++) {
+        items.push(`${i}${i}${j}${j}${j}${j}`);
+      }
+    }
+
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          items
+        }
+      },
+      methods: {
+        inner: avatars.inner,
+        randomize() {
+          for (let i = 0; i < 72; i++) {
+            Vue.set(this.items, i, avatars.random())
+          }
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
