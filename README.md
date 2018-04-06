@@ -1,6 +1,6 @@
 # Gridy Avatars
 
-| SVG avatar generator
+> SVG avatars generator
 
 ## Demo
 
