@@ -4,7 +4,7 @@
 
 ## Demo
 
-Try randomize button [here](https://darosh.github.io/gridy-avatars).
+Try randomize button [here](https://darosh.github.io/gridy-avatars/dist/).
 
 ## Usage
 
