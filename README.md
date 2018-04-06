@@ -8,7 +8,7 @@ Try randomize button [here](https://darosh.github.io/gridy-avatars/dist/).
 
 ## Usage
 
-* see API in [./src/avatars.js](./src/avatars.js)
+* see exported API in [./src/avatars.js](./src/avatars.js)
 * use [./dist/avatars.js](./dist/avatars.js)
 * see [./dist/index.html](./dist/index.html) for example usage (with Vue.js)
 
