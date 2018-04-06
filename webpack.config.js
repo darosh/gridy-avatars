@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: '[name].js',
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -73,6 +73,8 @@ if (process.env.NODE_ENV === 'production') {
     publicPath: '/dist/',
     filename: '[name].js',
     library: 'avatars',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    // TODO: https://github.com/webpack/webpack/issues/6522#issuecomment-371120689
+    globalObject: 'typeof self !== \'undefined\' ? self : this'
   }
 }
