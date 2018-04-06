@@ -8,6 +8,7 @@
     "last 2 versions",
     "not ie <= 8"
   ],
+  "bugs": "https://github.com/darosh/gridy-avatars/issues",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -26,9 +27,18 @@
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.1"
   },
+  "homepage": "https://darosh.github.io/gridy-avatars/dist",
+  "keywords": [
+    "avatar",
+    "generator",
+    "random",
+    "svg",
+    "vector"
+  ],
   "license": "MIT",
   "main": "./dist/avatars.js",
   "module": "./src/avatars.js",
+  "repository": "https://github.com/darosh/gridy-avatars",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules -p",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --inline"
