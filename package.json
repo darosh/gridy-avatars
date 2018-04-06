@@ -27,7 +27,8 @@
     "webpack-dev-server": "^3.1.1"
   },
   "license": "MIT",
-  "private": true,
+  "main": "./dist/avatars.js",
+  "module": "./src/avatars.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules -p",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --inline"
