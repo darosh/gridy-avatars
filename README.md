@@ -3,7 +3,7 @@
 
 > SVG avatars generator
 
-![sample 1](./dist/sample-1.svg)![sample 2](./dist/sample-2.svg)![sample 3](./dist/sample-3.svg)![sample 4](./dist/sample-4.svg)![sample 5](./dist/sample-5.svg)
+![sample 1](https://darosh.github.io/gridy-avatars/dist/sample-1.svg)![sample 2](https://darosh.github.io/gridy-avatars/dist/sample-2.svg)![sample 3](https://darosh.github.io/gridy-avatars/dist/sample-3.svg)![sample 4](https://darosh.github.io/gridy-avatars/dist/sample-4.svg)![sample 5](https://darosh.github.io/gridy-avatars/dist/sample-5.svg)
 
 ## Demo
 
