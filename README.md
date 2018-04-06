@@ -22,7 +22,7 @@ Try randomize button [here](https://darosh.github.io/gridy-avatars/dist/).
 
 ## Notes
 
-* 8^6 = 262.144 variants
+* 8<sup>6</sup> = 262.144 variants
 * based on 24&times;24 pixels grid
 * using Material Design colors (generated in [./src/colors.js](./src/colors.js))
 * inspired by [Gabfranck/svg_avatar](https://github.com/Gabfranck/svg_avatar)
