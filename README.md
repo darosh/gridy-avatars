@@ -1,4 +1,5 @@
-# Gridy Avatars
+# Gridy Avatars [![npm (scoped)](https://img.shields.io/npm/v/gridy-avatars.svg)](https://www.npmjs.com/package/gridy-avatars) [![demo](https://img.shields.io/badge/demo-online-brightgreen.svg)](https://darosh.github.io/gridy-avatars/dist/)
+
 
 > SVG avatars generator
 
