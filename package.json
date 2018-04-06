@@ -41,6 +41,7 @@
   "repository": "https://github.com/darosh/gridy-avatars",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules -p",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --inline"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --inline",
+    "test": "node -e \"const {outer} = require('./dist/avatars.js'); const write = require('fs').writeFileSync; write('./dist/sample-1.svg', outer('351610', 96)); write('./dist/sample-2.svg', outer('626272', 96)); write('./dist/sample-3.svg', outer('733677', 96)); write('./dist/sample-4.svg', outer('412101', 96)); write('./dist/sample-5.svg', outer('574644', 96)); \""
   }
 }

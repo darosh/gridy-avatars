@@ -10,8 +10,8 @@ export function random() {
   return Math.floor(Math.random() * total + total).toString(base).substring(1)
 }
 
-export function outer(id) {
-  return `<svg viewBox="0 0 ${size} ${size}">`
+export function outer(id, width) {
+  return `<svg ${width ? `width="${width}" height="${width}" ` : ''}viewBox="0 0 ${size} ${size}" xmlns="http://www.w3.org/2000/svg">`
     + inner(id)
     + `</svg>`
 }
