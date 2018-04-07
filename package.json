@@ -1,7 +1,7 @@
 {
   "name": "gridy-avatars",
   "description": "SVG avatar generator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "darosh <ensonador@gmail.com>",
   "browserslist": [
     "> 1%",
