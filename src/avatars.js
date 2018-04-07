@@ -25,7 +25,7 @@ export function inner(value) {
 
   ++id
 
-  return `<defs><clipPath id="${clipA}"><rect width="${half}" height="${size}" x="0" y="0"></rect></clipPath>`
+  return `<defs><clipPath id="${clipA}"><rect width="${half + 1}" height="${size}" x="0" y="0"></rect></clipPath>`
     + `<clipPath id="${clipB}"><rect width="${half}" height="${size}" x="${half}" y="0"></rect></clipPath></defs>`
     + `<g style="fill: ${colors.bg[value[1]][0]}" clip-path="${urlA}">${svg.body[value[0]]}</g>`
     + `<g style="fill: ${colors.bg[value[1]][1]}" clip-path="${urlB}">${svg.body[value[0]]}</g>`
