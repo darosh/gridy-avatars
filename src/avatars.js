@@ -2,11 +2,17 @@ import colors from '../colors'
 import svg from '../shapes'
 
 export const base = 8
+export const baseColors = 8
 export const size = 24
-export const total = Math.pow(base, 6)
+export const total = Math.pow(base, 3) * Math.pow(baseColors, 3)
 export let id = 0
 
+function ri(total) {
+  return Math.floor(Math.random() * total)
+}
+
 export function random() {
+  // return `${ri(base)}${ri(baseColors)}${ri(base)}${ri(baseColors)}${ri(base)}${ri(baseColors)}`
   return Math.floor(Math.random() * total + total).toString(base).substring(1)
 }
 
