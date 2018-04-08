@@ -9,7 +9,9 @@
     "not ie <= 8"
   ],
   "bugs": "https://github.com/darosh/gridy-avatars/issues",
-  "dependencies": {},
+  "dependencies": {
+    "d3-color": "^1.0.3"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
