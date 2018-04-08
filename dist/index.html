@@ -22,7 +22,7 @@
         <v-toolbar-title class="hidden-sm-and-down">Gridy Avatars</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-          <v-btn flat @click="dark = !dark">Theme</v-btn>
+          <v-btn flat @click="dark = !dark">{{ dark ? 'Light' : 'Dark'}}</v-btn>
           <v-btn flat @click="randomize()">Randomize</v-btn>
           <v-btn flat href="https://github.com/darosh/gridy-avatars">GitHub</v-btn>
         </v-toolbar-items>
